@@ -1,0 +1,43 @@
+/* Estilos generales para el cuerpo del texto*/
+
+body {
+    font-family: sans-serif;/* Fuente para el texto en general */
+    margin: 0; /* Elimina el margen superior e inferior del cuerpo del documento */
+}
+/* Estilos para el container principal */
+.container {
+    display: flex; /* Alinéa los elementos en lista horizontalmente */
+    flex-wrap:  wrap;/* permite que las targetas se envuelvan en multiplses lineas si o hay suficiente espacio */
+    justify-content: space-around; /* distrubuye el espacio entre las targetas de manera uniforme*/
+    padding: 20px; /* añade espacio interno al rededor del container */
+    max-width: 1200px; /* da una anchura de 800px al contenedor */
+    margin: 0 auto; /* centra el contenedor en la pagina */
+}
+
+/* Estilos individuales para las tarjetas */
+.tarjeta { 
+    width: 300px; /* define el ancho de las tarjetas */
+    margin: 10px; /* añade espacio entre las trajetas */
+    border: 1px solid #ccc; /* añade un bode gris claro al rededor de las tarjetas */
+    padding: 20px; /* espacio interno dento de las trajetas */
+    border-radius: 5px; /* borde redondeado a 5 pixeles para las tarjetas */
+    box-shadow: 0 2px 5px rgba (0, 0, 0, 0.1); /* añade un efecto de sombra a las tarjetas */
+}
+/* Estilos para las imagenes dentro de las tarjetas */
+.tarjeta img { 
+    width: 100%; /* hace que la imagen ocupe el 100% del ancho de la tarjeta */
+    height: auto; /* mantiene la proporcion de la imagen al cambiar el ancho */
+    display: block; /* elimina el espacio en linea debajo de la imagen */
+    border-radius: 5px 5px 0 0; /* bordes redondeados en la parte superior de la imagen */
+
+}
+
+.tarjeta h3 {
+    margin-top: 10px; /* añade una margen superior para separar el titulo del contenido anterior */
+}
+
+.tarjeta p {
+    font-size: 0.9em; /* defie un tamaño de fuente mas pequeño que el tamaño base */
+    line-height: 1.5; /* mejora la legibilidad mediante el aumento del espacio entre lineas */
+
+}
